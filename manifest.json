@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "YT Ad Detector",
+  "version": "1.0",
+  "description": "Detecta anúncios no YouTube",
+  "permissions": [ "scripting" ],
+  "host_permissions": [ "*://*.youtube.com/*" ],
+  "content_scripts": [
+    {
+      "matches": [ "*://*.youtube.com/*" ],
+      "js": [ "content.js" ]
+    }
+  ]
+}
